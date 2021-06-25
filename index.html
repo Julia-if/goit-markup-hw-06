@@ -364,17 +364,30 @@
             </div>
             <form action="#" class="modal-form-footer">
 <p class="form-footer-head">Подпишитесь на рассылку</p>
-<ul class="form-list list">
-<li class="form-list-item"> <label for="" class="form-footer-field">
-<input type="email" name="user-email" class="form-footer-input" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-</label></li>
-<li class="form-list-item"><button type="submit" class="form-footer-btn">Подписаться
+<div class="form-list">
+<label class="form-footer-field"><input type="email" name="user-email" class="form-footer-input" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+</label>
+<button type="submit" class="form-footer-btn">Подписаться
     <svg class="form-footer-btn-icon" width=24px height=24px>
         <use href="./images/symbol-defs.svg#icon-send"></use>
     </svg>
-</button></li>
- </ul>
+</button></div>
             </form>
+<!-- <form action="#" class="modal-form-footer">
+    <p class="form-footer-head">Подпишитесь на рассылку</p>
+    <ul class="form-list list">
+        <li class="form-list-item"> <label for="" class="form-footer-field">
+                <input type="email" name="user-email" class="form-footer-input" placeholder="E-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </label></li>
+        <li class="form-list-item"><button type="submit" class="form-footer-btn">Подписаться
+                <svg class="form-footer-btn-icon" width=24px height=24px>
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button></li>
+    </ul>
+</form> -->
+
         </div>
     </footer>
     <!-- === End Footer=== -->
@@ -410,7 +423,7 @@
                             <use href="./images/symbol-defs.svg#icon-email"></use>
                         </svg></span>
                 </label>
-                <label class="modal-form-field"> Комментарий
+                <label class="modal-form-field-massage"> Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
                 <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden"
